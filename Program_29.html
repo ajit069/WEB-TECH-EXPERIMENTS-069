@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Array Example</title>
+    <script>
+        function sortArray() {
+            // Define an array of numbers
+            var numbers = [34, 12, 5, 67, 23, 89];
+
+            // Sort in ascending order
+            numbers.sort(function(a, b) {
+                return a - b; // ensures numeric sorting
+            });
+
+            // Display result
+            document.getElementById("result").innerHTML = 
+                "Sorted Array: " + numbers.join(", ");
+        }
+    </script>
+</head>
+<body>
+    <h2>Sort Array of Numbers</h2>
+    <button onclick="sortArray()">Click to Sort</button>
+    <p id="result"></p>
+</body>
+</html>
